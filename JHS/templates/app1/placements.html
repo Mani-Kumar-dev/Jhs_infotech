@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load embed_video_tags %}
+
+
+
+{% block title %}
+<title>JHS Infotech_placements</title>
+{% endblock title %}
+
+{% block content %}
+
+
+<!--breadcrumbs starts-->
+<section class="about_bread">
+    <div class="container">
+        <div class="row text-center text-white">
+            <div class="col mt-5">
+                <h2 class="who">Placements</h2>
+                <ul class="breadcrumbs">
+                    <li><a href="/">Home</a></li>
+                    <li class="abt"><a href=""></a> Placements</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!--breadcrumbs Ends-->
+<!--Placements students starts-->
+<section class="place">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col video">
+                
+                    {% for i in videos %}
+                    {% video i.video '400x250' %}
+                    {% endfor %}
+
+                 <!--<iframe height="100%" src="https://www.youtube.com/embed/nwdpQNlhaj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                
+            </div>
+            <!--
+            <div class="col-md-4">
+                <div class="card d-flex flex-column p-3">
+                    <iframe  height="100%" src="https://www.youtube.com/embed/5Ly0Ft6qJAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card d-flex flex-column p-3">
+                    <iframe height="100%" src="https://www.youtube.com/embed/7R3Xr4QxtWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card d-flex flex-column p-3">
+                    <iframe height="100%" src="https://www.youtube.com/embed/mB83vui7lAU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card d-flex flex-column p-3">
+                    <iframe  height="100%" src="https://www.youtube.com/embed/XLJJkT4_t04" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card d-flex flex-column p-3">
+                    <iframe  height="100%" src="https://www.youtube.com/embed/NfnH1r4a3-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   
+                </div>
+            </div>-->
+
+        </div>
+    </div>
+</section>
+<!--Placements students Ends-->
+<!--Rating Starts-->
+<section class="rating-section my-md-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-6 text-center my-3">
+                <img src="{% static 'assets/images/rating/google.png' %}" alt="Google Logo" class="rating-logo">
+                <hr class="mx-auto my-2 w-md-25 w-50">
+                <div class="d-flex justify-content-center gap-1">
+                    <h5 class="fw-700">4.5</h5>
+                    <span>(1038)</span>
+                </div>
+                <div class="star-set">
+                    <div class="rating-stars">
+                        <small>
+                            <i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fas fa-star-half-alt text-warning'></i>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-6 text-center my-3">
+                <img src="{% static 'assets/images/rating/facebook.png' %}" alt="Facebook Logo" class="rating-logo">
+                <hr class="mx-auto my-2 w-md-25 w-50">
+                <div class="d-flex justify-content-center gap-1">
+                    <h5 class="fw-700">4.7</h5>
+                    <span>(312)</span>
+                </div>
+                <div class="star-set">
+                    <div class="rating-stars">
+                        <small>
+                            <i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fas fa-star-half-alt text-warning'></i>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-6 text-center my-3 mx-auto">
+                <img src="{% static 'assets/images/rating/justdial.png' %}" alt="JustDial Logo" class="rating-logo pb-2">
+                <hr class="mx-auto my-2 w-md-25 w-50">
+                <div class="d-flex justify-content-center gap-1">
+                    <h5 class="fw-700">4.3</h5>
+                    <span>(984)</span>
+                </div>
+                <div class="star-set">
+                    <div class="rating-stars">
+                        <small>
+                            <i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fas fa-star-half-alt text-warning'></i>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Rating ends-->
+{% endblock content %}

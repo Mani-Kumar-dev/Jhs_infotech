@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+<title>JHS Infotech_Contact</title>
+{% endblock title %}
+
+{% block content %}
+
+
+
+<section class="about_bread">
+    <div class="container">
+        <div class="row text-center text-white">
+            <div class="col mt-5">
+                <h2 class="who">Contact Us</h2>
+                <ul class="breadcrumbs">
+                    <li><a href="/">Home</a></li>
+                    <li class="abt"><a href=""></a> Contact Us</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!--bread Ends-->
+<!--contact Us starts-->
+<section class="contact mt-5 mb-5 ">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-12 text-center">
+                <h5 class="con-head mb-3">Contact Us</h5>
+                <h3 class="con-sub mb-4">Have any Query?</h3>
+                <p class="con-text mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, eum.<br> Magni est doloribus, ratione neque alias delectus</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5 mt-5">
+                <div class="email">
+                    <h6 class="con-mail mb-3">Email Us</h6>
+                </div>
+                <div class="email-text">
+                    <h5 class="con-text hr-bg">Info@jhs.com</h5>
+                </div>
+                <div class="call mt-4">
+                    <h6 class="con-cal mb-3 ">
+                        Call Us
+                    </h6>
+                </div>
+                <div class="call-text ">
+                    <h5 class="call-num hr-bg">+91 78420 00555</h5>
+                </div>
+                <div class="addr mt-4">
+                    <h6 class="ofc mb-3">
+                        Corporate Office
+                    </h6>
+                </div>
+                <div class="ofc-add">
+                    <h5 class="ofc-loc hr-bg">301, Pavani Anasuya Towers, Street No 1, Tarnaka ,
+                        Hyderabad, 500017, Telangana, INDIA.</h5>
+                </div>
+            </div>
+            <div class="col-md-7 mt-4">
+                <div class="form">
+                    <form action="{% url 'contact' %}" method="post" enctype="multipart/form-data">{% csrf_token %}
+                    <div class="row">
+                        {% for message in messages %}
+                        <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+                            <strong></strong> {{message}}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        {% endfor %}
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Your Name" name="name" required>
+                        </div>
+                        <div class="col">
+                            <input type="email" class="form-control" placeholder="Your Email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="tel" class="form-control" placeholder="Phone Number" name="phoneNumber" required>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Subject" name="subject" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <textarea id="" cols="30" rows="10" placeholder="Your Message" class="form-control text_area" name="message" required></textarea>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <button class="btn btn-outline-color" id="submit" type="submit">Submit</button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--contact Us Ends-->
+<!--Rating Starts-->
+<section class="rating-section my-md-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-6 text-center my-3">
+                <img src="{% static 'assets/images/rating/google.png' %}" alt="Google Logo" class="rating-logo">
+                <hr class="mx-auto my-2 w-md-25 w-50">
+                <div class="d-flex justify-content-center gap-1">
+                    <h5 class="fw-700">4.5</h5>
+                    <span>(1038)</span>
+                </div>
+                <div class="star-set">
+                    <div class="rating-stars">
+                        <small>
+                            <i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fas fa-star-half-alt text-warning'></i>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-6 text-center my-3">
+                <img src="{% static 'assets/images/rating/facebook.png' %}" alt="Facebook Logo" class="rating-logo">
+                <hr class="mx-auto my-2 w-md-25 w-50">
+                <div class="d-flex justify-content-center gap-1">
+                    <h5 class="fw-700">4.7</h5>
+                    <span>(312)</span>
+                </div>
+                <div class="star-set">
+                    <div class="rating-stars">
+                        <small>
+                            <i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fas fa-star-half-alt text-warning'></i>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-6 text-center my-3 mx-auto">
+                <img src="{% static 'assets/images/rating/justdial.png' %}" alt="JustDial Logo" class="rating-logo pb-2">
+                <hr class="mx-auto my-2 w-md-25 w-50">
+                <div class="d-flex justify-content-center gap-1">
+                    <h5 class="fw-700">4.3</h5>
+                    <span>(984)</span>
+                </div>
+                <div class="star-set">
+                    <div class="rating-stars">
+                        <small>
+                            <i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fas fa-star-half-alt text-warning'></i>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Rating ends-->
+{% endblock content %}

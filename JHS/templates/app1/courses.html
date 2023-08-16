@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+<title>JHS Infotech_Courses</title>
+{% endblock title %}
+
+{% block content %}
+
+<!--bread starts-->
+<section class="about_bread">
+    <div class="container">
+        <div class="row text-center text-white">
+            <div class="col mt-5">
+                <h2 class="who">Our Courses</h2>
+                <ul class="breadcrumbs">
+                    <li><a href="/">Home</a></li>
+                    <li class="abt"><a href=""></a> Our Courses</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!--bread Ends-->
+<!--Explore Courses starts-->
+<section class="explore mt-5">
+    <div class="container">
+        <div class="row my-4">
+            {% for post in allPosts %}
+            <div class="col-md-4 course-card-outer mb-3">
+                <div class="card course-card d-flex flex-row align-items-center gap-md-3 p-3 rounded-3">
+                    <!--<img src="{% static 'assets/images/Couse_img/devops.png' %}" alt="Devops" width="50px" loading="lazy">-->
+                    <img src="{{post.img.url}}" alt="Devops" width="50px" loading="lazy">
+                    <div class="ms-3 ms-md-0">
+                        <a href="" class="text-decoration-none stretched-link text-black">
+                            <h5 class="me-4">{{post.title}}</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            <!--
+            <div class="col-md-4 course-card-outer">
+                <div class="card course-card d-flex flex-row align-items-center gap-md-3 p-3 rounded-3">
+                    <img src="{% static 'assets/images/Couse_img/Sap.jpg' %}"  class="img-explore"alt="SAP BI Course " width="50px" loading="lazy">
+                    <div class="ms-3 ms-md-0">
+                        <a href="" class="text-decoration-none stretched-link text-black">
+                            <h5 class="me-4">SAP BI Course</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 course-card-outer">
+                <div class="card course-card d-flex flex-row align-items-center gap-md-3 p-3 rounded-3">
+                    <img src="{% static 'assets/images/Couse_img/sap2.png' %}" alt="SAP CPI" width="50px" loading="lazy">
+                    <div class="ms-3 ms-md-0">
+                        <a href="" class="text-decoration-none stretched-link text-black">
+                            <h5 class="me-4">SAP CPI</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>-->
+                                        
+        </div>
+        <!--<div class="row my-3">
+            <div class="col-md-4 course-card-outer">
+                <div class="card course-card d-flex flex-row align-items-center gap-md-3 p-3 rounded-3">
+                    <img src="{% static 'assets/images/Couse_img/sap3.jpg' %}" alt="SAP BW HANA" width="50px" loading="lazy">
+                    <div class="ms-3 ms-md-0">
+                        <a href="" class="text-decoration-none stretched-link text-black">
+                            <h5 class="me-4">SAP BW HANA</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 course-card-outer">
+                <div class="card course-card d-flex flex-row align-items-center gap-md-3 p-3 rounded-3">
+                    <img src="{% static 'assets/images/Couse_img/sap4.jpg' %}" alt="SAP BW4 HANA " width="50px" loading="lazy">
+                    <div class="ms-3 ms-md-0">
+                        <a href="" class="text-decoration-none stretched-link text-black">
+                            <h5 class="me-4">SAP BW4 HANA</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 course-card-outer">
+                <div class="card course-card d-flex flex-row align-items-center gap-md-3 p-3 rounded-3">
+                    <img src="{% static 'assets/images/Couse_img/sap5.jpg' %}" alt="SAP FICO" width="50px" loading="lazy">
+                    <div class="ms-3 ms-md-0">
+                        <a href="" class="text-decoration-none stretched-link text-black">
+                            <h5 class="me-4">SAP FICO</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+                                        
+        </div>-->
+       
+    </div>
+</section>
+<!--Explore Courses Ends-->
+
+
+
+<!--Rating Starts-->
+<section class="rating-section my-md-5 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-6 text-center my-3">
+                <img src="{% static 'assets/images/rating/google.png' %}" alt="Google Logo" class="rating-logo">
+                <hr class="mx-auto my-2 w-md-25 w-50">
+                <div class="d-flex justify-content-center gap-1">
+                    <h5 class="fw-700">4.5</h5>
+                    <span>(1038)</span>
+                </div>
+                <div class="star-set">
+                    <div class="rating-stars">
+                        <small>
+                            <i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fas fa-star-half-alt text-warning'></i>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-6 text-center my-3">
+                <img src="{% static 'assets/images/rating/facebook.png' %}" alt="Facebook Logo" class="rating-logo">
+                <hr class="mx-auto my-2 w-md-25 w-50">
+                <div class="d-flex justify-content-center gap-1">
+                    <h5 class="fw-700">4.7</h5>
+                    <span>(312)</span>
+                </div>
+                <div class="star-set">
+                    <div class="rating-stars">
+                        <small>
+                            <i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fas fa-star-half-alt text-warning'></i>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-6 text-center my-3 mx-auto">
+                <img src="{% static 'assets/images/rating/justdial.png' %}" alt="JustDial Logo" class="rating-logo pb-2">
+                <hr class="mx-auto my-2 w-md-25 w-50">
+                <div class="d-flex justify-content-center gap-1">
+                    <h5 class="fw-700">4.3</h5>
+                    <span>(984)</span>
+                </div>
+                <div class="star-set">
+                    <div class="rating-stars">
+                        <small>
+                            <i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fas fa-star-half-alt text-warning'></i>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Rating ends-->
+{% endblock content %}

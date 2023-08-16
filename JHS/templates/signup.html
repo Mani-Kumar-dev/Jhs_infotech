@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+<title>JHS Infotech_SignIn</title>
+{% endblock title %}
+{% block content %}
+<!--bread starts-->
+<section class="about_bread">
+    <div class="container">
+        <div class="row text-center text-white">
+            <div class="col mt-5">
+                <h2 class="who">SignUp</h2>
+                <ul class="breadcrumbs">
+                    <li><a href="/login">Login</a></li>
+                    <li class="abt"><a href=""></a> SignIn</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!--bread Ends-->
+<section class="sign">
+    
+    <div class="container">
+        <form action="/signup" method="post">{% csrf_token %}
+            <div class="row">
+                <div class="col-md">
+                    {% for message in messages %}
+                    <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+                    <strong></strong> {{message}}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    {% endfor %}
+                    
+                    <input type="tel" class="form-control mb-3" placeholder="phonenumber" name="usernumber" required>
+                    <input type="email" class="form-control mb-3" placeholder="email" name="email" required>
+                    <input type="password" class="form-control mb-3" placeholder="Password" name="pass1" required>
+                    <input type="password" class="form-control mb-3" placeholder="conform Password" name="pass2" required>
+                    <button type="submit" class="btn btn-info w-100 mb-3">SignUp</button>
+    
+                    <a href="/login"><span>Already user?</span></a>
+    
+    
+    
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock content %}

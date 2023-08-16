@@ -1,0 +1,267 @@
+{% extends 'base.html' %}
+
+{% load static %}
+  
+{% block title %}
+<title>JHS Infotech_Home</title>
+{% endblock title %}
+
+{% block content %}
+
+
+<!--Banner starts-->
+    <div class="inner-wrapper" id="course-page">
+    <section class="home-banner py-5">
+        <div class="container py-md-5 pb-5 ">
+            <div class="row pb-4 banhd">
+                <div class="col-md-6 text-md-start text-center">
+                    <h4 class="text-white fw-700 mb-md-4 my-4 px-3 px-md-0">
+                       Welcome to JHS Infotech
+                    </h4>
+                    <h1 class="text-white fw-700 mb-md-4 my-4 px-3 px-md-0" id="font">Transform the way you recruit!</h1>
+                    
+                    <p class="text-white para">Learn from JHS Training platform by following our proven ways to achieve the Best Skills for your present and future career.</p>
+                    <a href="/courses" class="btn btn-brand me-3 ex">Explore Courses</a>
+                </div>
+            </div>
+            
+        <div class="row mt-5 align-items-stretch numbers-row">
+            <div class="col-md-4 d-md-flex align-items-center gap-3 ">
+                <img src="{% static 'assets/images/10y.png' %}" alt="Success Years Badge Image" class="ps-md-4 badge-img ps-0">
+                <p class="text-white fw-600 ps-3 ">10 Years in the field of IT Training & Placement Industry</p>
+            </div>
+            <div class="col-md-8 py-md-3 ps-md-5">
+                <div class="row ps-md-4">
+                    <div class="col-md-3 py-3 py-md-0 col-6 text-center">
+                        <p class="text-blue mb-3"><i class="fa-solid fa-users fa-2x"></i></p>
+                        <h3 class="text-brand fw-700 mb-0 text-dark">1000+</h3>
+                        <p class="mb-0 text-brand fw-600 text-dark">Student Placed</p>
+                    </div>
+                    <div class="col-md-3 py-3 py-md-0 col-6 text-center">
+                        <p class="text-blue mb-3"><i class="fa-solid fa-handshake-angle fa-2x"></i></p>
+                        <h3 class="text-brand fw-700 mb-0 text-dark">1500+</h3>
+                        <p class="mb-0 text-brand fw-600 text-dark">Companies TieUp</p>
+                    </div>
+                    <div class="col-md-3 py-3 py-md-0 col-6 text-center">
+                        <p class="text-blue mb-3"><i class="fa-solid fa-building fa-2x"></i></p>
+                        <h3 class="text-brand fw-700 mb-0 text-dark">1250+</h3>
+                        <p class="mb-0 text-brand fw-600 text-dark">Reowned Faculty&Mentors</p>
+                    </div>
+                    <div class="col-md-3 py-3 py-md-0 col-6 text-center">
+                        <p class="text-blue mb-3"><i class="fa-solid fa-chalkboard-user fa-2x"></i></p>
+                        <h3 class="text-brand fw-700 mb-0 text-dark">100%</h3>
+                        <p class="mb-0 text-brand fw-600 text-dark">Placement Assistance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Banner Ends-->
+ 
+<!--Placements starts-->
+    <section class="placement-section my-5">
+    <div class="container">
+        <div class="row placement-inner mt-5 mb-2 mx-0">
+            <div class="col-md-6 p-md-5 p-4 text-md-start text-center">
+                <h3 class="fw-600 "><span class="fw-700" style="color:#0f66dc">Get 100% Job Placement</span> support & get placed in your dream company </h3>
+                <p class="hr-gradient mt-4 mb-3"></p>
+                <div class="d-md-flex ps-2 text-start">
+                    <div class="pe-md-5 my-2 my-md-0 job-div">
+                        <span><i class="fa-solid fa-thumbs-up fa-2x pe-2"></i></span>
+                            <span class="ps-3">Job Guarantee</span>
+                    </div>
+                    <div class="ps-md-5 my-2 my-md-0">
+                        <span><i class="fa-solid fa-handshake-simple fa-2x"></i></span>
+                        <span class="ps-3">1500+ Companies Tie-Ups</span>
+                    </div>
+                </div>
+                <p class="hr-gradient mb-4 mt-3"></p>
+                <a href="/contact" class="btn btn-brand inqFormShow" data-bs-toggle="" data-type="placement_assistance" data-source_value="Home Page" data-source="Home Page" data-bs-target="">Enter Your Details Now</a>
+
+            </div>
+            <div class="col-md-6 imgpos">
+                <div class="placement">
+                    <img src="{% static 'assets/images/img1.jpg' %}" class="img-fluid" alt="">
+                    <img src="{% static 'assets/images/100placement.png' %}" class="assistance" alt="">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Placements Ends-->
+
+<!--Registration form starts-->
+
+    <section class="placement-initiatives my-5 py-4">
+    <div class="container">
+        <h2 class="text-brand text-center pb-4"><span class="fw-700">Placement Initiative</span> for our Students</h2>
+        
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pill1" role="tabpanel" aria-labelledby="pills-tab1">
+                <div class="row initiative-tab-content align-items-center mt-4">
+                    <div class="col-md-7 text-brand">
+                        <h4 class="mb-4 fw-700">JobFest by JHS Infotech</h4>
+                        <p style="color:#00000093;">JHS Infotech organizes a JobFest where 50+ Companies interview Candidates for their Job Openings. This event is organized at a Convention center </p>
+                        <ul style="color:#00000093;" class="">
+                            <li class="my-3">Maximum salary offered by companies during JobFest for a fresher has been 7.2 lacs</li>
+                            <li class="my-3">Each student interviews with maximum companies in 1 day</li>
+                            <li class="my-3">Companies get to interact with multiple candidates and offer maximum salaries</li>
+                            <li class="my-3">Candidates select the best Job Offers</li>
+                        </ul>
+                        <div class="d-flex gap-md-4 mt-4 mb-5 cta-div">
+                            <a href="/about" class="btn btn-outline-brand">Know More</a>
+                            <!--<a href="#" class="btn popup-youtube btn-outline-brand">
+                                <i class="fa-solid fa-circle-play"></i> Watch Video</a>-->
+                        </div>
+                    </div>
+                    <div class="col-md-5 mx-auto">
+                        <div class="p-30 mt-0 bg_form">
+                            <h3 class="title-pattern mt-0 text-center"><span class="text-white"> Registration<span class=""> Form</span></span></h3>
+                            {% for message in messages %}
+                        <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+                            <strong></strong> {{message}}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        {% endfor %}
+                            <!-- Appilication Form Start-->
+                            <form name="reservation_form" class="reservation-form mt-20" method="post" action="/">{% csrf_token %}
+                              <div class="row"> 
+                                <div class="col-sm-12">
+                                  <div class="form-group mb-20">
+                                    <input placeholder="Enter Full Name" type="text" name="reservation_name" required="" class="form-control" aria-required="true">
+                                  </div>
+                                </div>
+                                <div class="col-sm-6">
+                                  <div class="form-group mb-20">
+                                    <input placeholder="Email" type="text"  name="reservation_email" class="form-control" required="" aria-required="true">
+                                  </div>
+                                </div>
+                                <div class="col-sm-6">
+                                  <div class="form-group mb-20">
+                                    <input placeholder="Phone" type="text" name="reservation_phone" class="form-control" required="" aria-required="true">
+                                  </div>
+                                </div>
+                                <div class="col-sm-6">
+                                  <div class="form-group mb-20">
+                                    <div class="styled-select">
+                                      <select id="person_select" name="select_course" class="form-control" required="" aria-required="true">
+                                        <option value="">Choose Course</option>
+                                        <option value="1 course">course-1</option>
+                                        <option value="2 course">course-2</option>
+                                        <option value="3 course">course-3</option>
+                                        <option value="4 course">course-4</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-sm-6">
+                                  <div class="form-group mb-20">
+                                    <input name="Date" class="form-control required date-picker" type="date" placeholder="Date" aria-required="true">
+                                  </div>
+                                </div>
+                                <div class="col-sm-12">
+                                  <div class="form-group">
+                                    <textarea placeholder="Message" rows="3" class="form-control required" name="form_message" id="form_message" aria-required="true"></textarea>
+                                  </div>
+                                </div>
+                                <div class="col-sm-12">
+                                  <div class="form-group mb-0 mt-10">
+                                    <input name="form_botcheck" class="form-control" type="hidden" value="">
+                                    <button type="submit" class="btn btn-colored text-white btn-lg btn-block mt-3" data-loading-text="Please wait...">Submit</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                            <!-- Slider Form End-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!--Registration form Ends-->
+
+<!--Our gallery Starts-->
+<section class="gallery">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md">
+                <h2 class="text-brand text-center fw-700 pb-4" > Our Gallery</h2>
+                <p class="lorem text-center mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo officia, <br>eveniet numquam itaque illo exercitationem aperiam quidem ipsa quia delectus!</p>
+            </div>
+        </div>
+        <div class="row gy-2 gx-2 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gallery">
+            
+        {% for post in allPosts %}
+            <div class="col">
+                <a href="{{ post.img.url }}" target="_blank">
+                    <img src="{{ post.img.url }}" class="img-fluid" alt="">
+                </a>
+            </div>
+        {% endfor %}
+        
+           
+        </div>
+    </div>
+   
+</section>
+
+<!--Rating starts-->
+<section class="rating-section my-md-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-6 text-center my-3">
+                <img src="{% static 'assets/images/rating/google.png' %}" alt="Google Logo" class="rating-logo">
+                <hr class="mx-auto my-2 w-md-25 w-50">
+                <div class="d-flex justify-content-center gap-1">
+                    <h5 class="fw-700">4.5</h5>
+                    <span>(1038)</span>
+                </div>
+                <div class="star-set">
+                    <div class="rating-stars">
+                        <small>
+                            <i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fas fa-star-half-alt text-warning'></i>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-6 text-center my-3">
+                <img src="{% static 'assets/images/rating/facebook.png' %}" alt="Facebook Logo" class="rating-logo">
+                <hr class="mx-auto my-2 w-md-25 w-50">
+                <div class="d-flex justify-content-center gap-1">
+                    <h5 class="fw-700">4.7</h5>
+                    <span>(312)</span>
+                </div>
+                <div class="star-set">
+                    <div class="rating-stars">
+                        <small>
+                            <i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fas fa-star-half-alt text-warning'></i>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-6 text-center my-3 mx-auto">
+                <img src="{% static 'assets/images/rating/justdial.png' %}" alt="JustDial Logo" class="rating-logo pb-2">
+                <hr class="mx-auto my-2 w-md-25 w-50">
+                <div class="d-flex justify-content-center gap-1">
+                    <h5 class="fw-700">4.3</h5>
+                    <span>(984)</span>
+                </div>
+                <div class="star-set">
+                    <div class="rating-stars">
+                        <small>
+                            <i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fa fa-star text-warning'></i><i class='fas fa-star-half-alt text-warning'></i>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Rating ends-->
+
+{% endblock content %}
